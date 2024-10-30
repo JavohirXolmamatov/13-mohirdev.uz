@@ -1,0 +1,533 @@
+// kurslar
+
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 576px ) {
+    .kurslar {
+        margin: 0;
+        padding: 0;
+        
+    .kurslar-box {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .kurslar-btn {
+        // display: none;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        vertical-align: middle;
+        gap: 3rem;
+        font-size: 18px;
+        padding-bottom: 50px;
+        overflow: scroll;
+        
+        a {
+            color: rgb(120, 120, 120);
+        }
+    }
+
+    .row {
+        margin: 0;
+        padding: 0;
+        row-gap: 1.5rem;
+        height: 500px;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .col-12  {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        .card {
+            min-height: 450px;
+            height: 100%;
+            border-radius: 10px;
+            transition: 0.5s ease;
+            &:hover {
+                transform: scale(1.005);
+                transition: 0.5s ease;
+                box-shadow: #419DFB;
+            }
+        }
+        .card-body {
+            position: relative;
+
+            h4 {
+                position: absolute;
+                bottom: 15px;
+                color: #419DFB;
+            }
+            p {
+                color: rgb(120, 120, 120);
+                font-size: 18px;
+            }
+        }
+        img {
+            height: 196px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+
+    .active {
+        color: #419DFB !important;
+
+        &::after {
+            content: "";
+            display: block;
+            color: #419DFB;
+            background-color: #419DFB;
+            width: 120px;
+            height: 2px;
+            margin:0 auto;
+        }
+    }
+
+}
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .kurslar {
+    .kurslar-box {
+        width: 95%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 52px;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .kurslar-btn {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        vertical-align: middle;
+        gap: 3rem;
+        font-size: 18px;
+        padding-bottom: 50px;
+        
+        a {
+            color: rgb(120, 120, 120);
+        }
+    }
+
+    .row {
+        margin: 0;
+        padding: 0;
+        row-gap: 1.5rem;
+    }
+
+    .col-lg-3 {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        .card {
+            min-height: 450px;
+            height: 100%;
+            border-radius: 10px;
+            transition: 0.5s ease;
+            &:hover {
+                transform: scale(1.005);
+                transition: 0.5s ease;
+                box-shadow: #419DFB;
+            }
+        }
+        .card-body {
+            position: relative;
+
+            h4 {
+                position: absolute;
+                bottom: 15px;
+                color: #419DFB;
+            }
+            p {
+                color: rgb(120, 120, 120);
+                font-size: 18px;
+            }
+        }
+        img {
+            height: 196px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+
+    .active {
+        color: #419DFB !important;
+
+        &::after {
+            content: "";
+            display: block;
+            color: #419DFB;
+            background-color: #419DFB;
+            width: 120px;
+            height: 2px;
+            margin:0 auto;
+        }
+    }
+
+}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .kurslar {
+    .kurslar-box {
+        width: 95%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 52px;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .kurslar-btn {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        vertical-align: middle;
+        gap: 3rem;
+        font-size: 18px;
+        padding-bottom: 50px;
+        
+        a {
+            color: rgb(120, 120, 120);
+        }
+    }
+
+    .row {
+        margin: 0;
+        padding: 0;
+        row-gap: 1.5rem;
+    }
+
+    .col-lg-3 {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        .card {
+            min-height: 450px;
+            height: 100%;
+            border-radius: 10px;
+            transition: 0.5s ease;
+            &:hover {
+                transform: scale(1.005);
+                transition: 0.5s ease;
+                box-shadow: #419DFB;
+            }
+        }
+        .card-body {
+            position: relative;
+
+            h4 {
+                position: absolute;
+                bottom: 15px;
+                color: #419DFB;
+            }
+            p {
+                color: rgb(120, 120, 120);
+                font-size: 18px;
+            }
+        }
+        img {
+            height: 196px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+
+    .active {
+        color: #419DFB !important;
+
+        &::after {
+            content: "";
+            display: block;
+            color: #419DFB;
+            background-color: #419DFB;
+            width: 120px;
+            height: 2px;
+            margin:0 auto;
+        }
+    }
+
+}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .kurslar {
+    .kurslar-box {
+        width: 95%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 52px;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .kurslar-btn {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        vertical-align: middle;
+        gap: 3rem;
+        font-size: 18px;
+        padding-bottom: 50px;
+        
+        a {
+            color: rgb(120, 120, 120);
+        }
+    }
+
+    .row {
+        margin: 0;
+        padding: 0;
+        row-gap: 1.5rem;
+    }
+
+    .col-lg-3 {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        .card {
+            min-height: 450px;
+            height: 100%;
+            border-radius: 10px;
+            transition: 0.5s ease;
+            &:hover {
+                transform: scale(1.005);
+                transition: 0.5s ease;
+                box-shadow: #419DFB;
+            }
+        }
+        .card-body {
+            position: relative;
+
+            h4 {
+                position: absolute;
+                bottom: 15px;
+                color: #419DFB;
+            }
+            p {
+                color: rgb(120, 120, 120);
+                font-size: 18px;
+            }
+        }
+        img {
+            height: 196px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+
+    .active {
+        color: #419DFB !important;
+
+        &::after {
+            content: "";
+            display: block;
+            color: #419DFB;
+            background-color: #419DFB;
+            width: 120px;
+            height: 2px;
+            margin:0 auto;
+        }
+    }
+
+}
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .kurslar {
+    .kurslar-box {
+        width: 95%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 52px;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .kurslar-btn {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        vertical-align: middle;
+        gap: 3rem;
+        font-size: 18px;
+        padding-bottom: 50px;
+        
+        a {
+            color: rgb(120, 120, 120);
+        }
+    }
+
+    .row {
+        margin: 0;
+        padding: 0;
+        row-gap: 1.5rem;
+    }
+
+    .col-xl-3 {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        .card {
+            min-height: 450px;
+            height: 100%;
+            border-radius: 10px;
+            transition: 0.5s ease;
+            &:hover {
+                transform: scale(1.005);
+                transition: 0.5s ease;
+                box-shadow: #419DFB;
+            }
+        }
+        .card-body {
+            position: relative;
+
+            h4 {
+                position: absolute;
+                bottom: 15px;
+                color: #419DFB;
+            }
+            p {
+                color: rgb(120, 120, 120);
+                font-size: 18px;
+            }
+        }
+        img {
+            height: 170px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+
+    .active {
+        color: #419DFB !important;
+
+        &::after {
+            content: "";
+            display: block;
+            color: #419DFB;
+            background-color: #419DFB;
+            width: 120px;
+            height: 2px;
+            margin:0 auto;
+        }
+    }
+
+}
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .kurslar {
+    .kurslar-box {
+        width: 95%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 52px;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .kurslar-btn {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        vertical-align: middle;
+        gap: 3rem;
+        font-size: 18px;
+        padding-bottom: 50px;
+        
+        a {
+            color: rgb(120, 120, 120);
+        }
+    }
+
+    .row {
+        margin: 0;
+        padding: 0;
+        row-gap: 1.5rem;
+    }
+
+    .col-lg-3 {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        .card {
+            min-height: 450px;
+            height: 100%;
+            border-radius: 10px;
+            transition: 0.5s ease;
+            &:hover {
+                transform: scale(1.005);
+                transition: 0.5s ease;
+                box-shadow: #419DFB;
+            }
+        }
+        .card-body {
+            position: relative;
+
+            h4 {
+                position: absolute;
+                bottom: 15px;
+                color: #419DFB;
+            }
+            p {
+                color: rgb(120, 120, 120);
+                font-size: 18px;
+            }
+        }
+        img {
+            height: 196px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+
+    .active {
+        color: #419DFB !important;
+
+        &::after {
+            content: "";
+            display: block;
+            color: #419DFB;
+            background-color: #419DFB;
+            width: 120px;
+            height: 2px;
+            margin:0 auto;
+        }
+    }
+
+}
+}

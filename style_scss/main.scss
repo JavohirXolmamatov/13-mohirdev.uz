@@ -1,0 +1,35 @@
+// Baza fayllar
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/colors';
+
+// Komponentlar
+@import 'components/buttons';
+@import 'components/cards';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+
+// Sahifalar
+@import 'main/home';
+@import 'main/statistic';
+@import 'main/contact';
+@import 'main/fikrlar';
+@import 'main/kasblar';
+@import 'main/kurslar';
+@import 'main/test';
+@import 'main/ustoz-fikrlari';
+@import 'main/hamkorlar';
+
+
+
+// Temalar
+@import 'themes/dark-theme';
+@import 'themes/light-theme';
+
+// Yordamchi
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/functions';

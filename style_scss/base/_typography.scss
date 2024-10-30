@@ -1,0 +1,30 @@
+//Shriftlar, paragraflar va matnlar uchun umumiy uslublar.
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    width: 100%;
+    padding-top: 80px;
+    margin: 0 auto;
+}
+
+.hr {
+    max-width: 100%;
+    width: 95%;
+    height: 1px;
+    margin: 0 auto;
+    color: rgb(68, 68, 68);
+    background-color: rgb(71, 71, 71);
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,303 @@
+
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.8px) {
+    .ustoz-fikrlar {
+    width: 100%;
+    margin: 0 auto;
+    .row {
+        display: flex;
+        flex-wrap: nowrap; /* O'ralishni oldini oladi, barcha elementlar bir qatorga joylashadi */
+        overflow-x: scroll; /* Agar kontent sig'masa, gorizontal aylantirishga ruxsat beradi */
+        padding: 0 0.8rem;
+        margin: 0;
+    }
+    .col-12 {
+        max-width:85%; /* Har bir ustunning maksimal kengligi 25% bo'lishiga ishonch hosil qilinadi */
+        box-sizing: border-box; /* Padding va border hisobga olinadi */
+        overflow: hidden;
+    }
+    
+    .left-right {
+        font-size: 1rem;
+        padding: 0 0.8rem;
+        padding-bottom: 3rem;
+    }
+
+    .title {
+        font-size: 2.3rem;
+        font-weight: bold;
+    }
+
+    .chevron {
+        display: none;
+        // display: flex;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+
+    .card {
+        border-radius: 20px;
+        transition: 0.5s ease;
+        position: relative;
+        background-color: #f9fcfe;
+
+        img {
+            border-radius: 20px;
+            width: 100%; /* Rasm kengligini kartaga moslab qo'yish */
+        }
+    }
+    
+}
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .ustoz-fikrlar {
+    width: 95%;
+    margin: 0 auto;
+    .row {
+        display: flex;
+        flex-wrap: nowrap; /* O'ralishni oldini oladi, barcha elementlar bir qatorga joylashadi */
+        overflow-x: hidden; /* Agar kontent sig'masa, gorizontal aylantirishga ruxsat beradi */
+    }
+    .col-lg-3 {
+        flex: 0 0 25%; /* Har bir ustun kengligi qatorning 25% qismiga teng bo'ladi */
+        max-width: 25%; /* Har bir ustunning maksimal kengligi 25% bo'lishiga ishonch hosil qilinadi */
+        box-sizing: border-box; /* Padding va border hisobga olinadi */
+    }
+    
+    .left-right {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .chevron {
+        display: flex;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .card {
+        border-radius: 20px;
+        transition: 0.5s ease;
+        position: relative;
+        background-color: #f9fcfe;
+
+        img {
+            border-radius: 20px;
+            width: 100%; /* Rasm kengligini kartaga moslab qo'yish */
+        }
+    }
+    
+}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .ustoz-fikrlar {
+    width: 95%;
+    margin: 0 auto;
+    .row {
+        display: flex;
+        flex-wrap: nowrap; /* O'ralishni oldini oladi, barcha elementlar bir qatorga joylashadi */
+        overflow-x: hidden; /* Agar kontent sig'masa, gorizontal aylantirishga ruxsat beradi */
+    }
+    .col-lg-3 {
+        flex: 0 0 25%; /* Har bir ustun kengligi qatorning 25% qismiga teng bo'ladi */
+        max-width: 25%; /* Har bir ustunning maksimal kengligi 25% bo'lishiga ishonch hosil qilinadi */
+        box-sizing: border-box; /* Padding va border hisobga olinadi */
+    }
+    
+    .left-right {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .chevron {
+        display: flex;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .card {
+        border-radius: 20px;
+        transition: 0.5s ease;
+        position: relative;
+        background-color: #f9fcfe;
+
+        img {
+            border-radius: 20px;
+            width: 100%; /* Rasm kengligini kartaga moslab qo'yish */
+        }
+    }
+    
+}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .ustoz-fikrlar {
+    width: 95%;
+    margin: 0 auto;
+    .row {
+        display: flex;
+        flex-wrap: nowrap; /* O'ralishni oldini oladi, barcha elementlar bir qatorga joylashadi */
+        overflow-x: hidden; /* Agar kontent sig'masa, gorizontal aylantirishga ruxsat beradi */
+    }
+    .col-lg-3 {
+        flex: 0 0 25%; /* Har bir ustun kengligi qatorning 25% qismiga teng bo'ladi */
+        max-width: 25%; /* Har bir ustunning maksimal kengligi 25% bo'lishiga ishonch hosil qilinadi */
+        box-sizing: border-box; /* Padding va border hisobga olinadi */
+    }
+    
+    .left-right {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .chevron {
+        display: flex;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .card {
+        border-radius: 20px;
+        transition: 0.5s ease;
+        position: relative;
+        background-color: #f9fcfe;
+
+        img {
+            border-radius: 20px;
+            width: 100%; /* Rasm kengligini kartaga moslab qo'yish */
+        }
+    }
+    
+}
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .ustoz-fikrlar {
+    width: 95%;
+    margin: 0 auto;
+    .row {
+        display: flex;
+        flex-wrap: nowrap; /* O'ralishni oldini oladi, barcha elementlar bir qatorga joylashadi */
+        overflow-x: hidden; /* Agar kontent sig'masa, gorizontal aylantirishga ruxsat beradi */
+    }
+    .col-lg-3 {
+        flex: 0 0 25%; /* Har bir ustun kengligi qatorning 25% qismiga teng bo'ladi */
+        max-width: 25%; /* Har bir ustunning maksimal kengligi 25% bo'lishiga ishonch hosil qilinadi */
+        box-sizing: border-box; /* Padding va border hisobga olinadi */
+    }
+    
+    .left-right {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .chevron {
+        display: flex;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .card {
+        border-radius: 20px;
+        transition: 0.5s ease;
+        position: relative;
+        background-color: #f9fcfe;
+
+        img {
+            border-radius: 20px;
+            width: 100%; /* Rasm kengligini kartaga moslab qo'yish */
+        }
+    }
+    
+}
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .ustoz-fikrlar {
+    width: 95%;
+    margin: 0 auto;
+    .row {
+        display: flex;
+        flex-wrap: nowrap; /* O'ralishni oldini oladi, barcha elementlar bir qatorga joylashadi */
+        overflow-x: hidden; /* Agar kontent sig'masa, gorizontal aylantirishga ruxsat beradi */
+    }
+    .col-lg-3 {
+        flex: 0 0 25%; /* Har bir ustun kengligi qatorning 25% qismiga teng bo'ladi */
+        max-width: 25%; /* Har bir ustunning maksimal kengligi 25% bo'lishiga ishonch hosil qilinadi */
+        box-sizing: border-box; /* Padding va border hisobga olinadi */
+    }
+    
+    .left-right {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .chevron {
+        display: flex;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .card {
+        border-radius: 20px;
+        transition: 0.5s ease;
+        position: relative;
+        background-color: #f9fcfe;
+
+        img {
+            border-radius: 20px;
+            width: 100%; /* Rasm kengligini kartaga moslab qo'yish */
+        }
+    }
+    
+}
+}

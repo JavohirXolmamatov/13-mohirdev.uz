@@ -1,0 +1,629 @@
+
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.8px) {
+    .fikrlar {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 4rem;
+    .row {
+        display: flex;
+        flex-wrap: nowrap; /* O'ralishni oldini oladi, barcha elementlar bir qatorga joylashadi */
+        overflow-x: scroll; /* Agar kontent sig'masa, gorizontal aylantirishga ruxsat beradi */
+        margin: 0;
+        padding: 0;
+    }
+    .col-12 {
+        // flex: 0 0 25%; /* Har bir ustun kengligi qatorning 25% qismiga teng bo'ladi */
+        max-width: 85%; /* Har bir ustunning maksimal kengligi 25% bo'lishiga ishonch hosil qilinadi */
+        box-sizing: border-box; /* Padding va border hisobga olinadi */
+    }
+    
+    .left-right {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+
+    .chevron {
+        display: none;
+        // display: flex;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .card {
+        border-radius: 20px;
+        transition: 0.5s ease;
+        position: relative;
+        background-color: #f9fcfe;
+        
+        &:hover {
+            background-color: #3F9CFB;
+            transition: 0.5s ease;
+        }
+
+        &:hover .fikrlar-btn {
+            bottom: 20px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        img {
+            border-radius: 20px;
+            width: 100%; /* Rasm kengligini kartaga moslab qo'yish */
+        }
+
+        .bi-play-fill {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 40px;
+            color: #3F9CFB;
+        }
+
+        .fikrlar-btn {
+            position: absolute;
+            border: 1px solid white;
+            background-color: white;
+            color: #3F9CFB;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 14px 0;
+            width: 90%;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0;
+            visibility: hidden;
+            transition: bottom 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+        }
+    }
+    .fikrlar-btn2 {
+        padding: 30px 0;
+        text-align: center;
+        a {
+            padding: 20px 34px;
+            color: white;
+            background-color:#3F9CFB;
+            border-radius: 10px;
+            transition: 0.5s ease;
+            font-size: 18px;
+            font-weight: bold;
+            &:hover {
+                background-color: darken($color: #3F9CFB, $amount: 20%);
+                transition: 0.5s ease;
+            }
+        }
+    }
+}
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .fikrlar {
+    width: 95%;
+    margin: 0 auto;
+    .row {
+        display: flex;
+        flex-wrap: nowrap; /* O'ralishni oldini oladi, barcha elementlar bir qatorga joylashadi */
+        overflow-x: hidden; /* Agar kontent sig'masa, gorizontal aylantirishga ruxsat beradi */
+    }
+    .col-lg-3 {
+        flex: 0 0 25%; /* Har bir ustun kengligi qatorning 25% qismiga teng bo'ladi */
+        max-width: 25%; /* Har bir ustunning maksimal kengligi 25% bo'lishiga ishonch hosil qilinadi */
+        box-sizing: border-box; /* Padding va border hisobga olinadi */
+    }
+    
+    .left-right {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .chevron {
+        display: flex;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .card {
+        border-radius: 20px;
+        transition: 0.5s ease;
+        position: relative;
+        background-color: #f9fcfe;
+        
+        &:hover {
+            background-color: #3F9CFB;
+            transition: 0.5s ease;
+        }
+
+        &:hover .fikrlar-btn {
+            bottom: 20px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        img {
+            border-radius: 20px;
+            width: 100%; /* Rasm kengligini kartaga moslab qo'yish */
+        }
+
+        .bi-play-fill {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 40px;
+            color: #3F9CFB;
+        }
+
+        .fikrlar-btn {
+            position: absolute;
+            border: 1px solid white;
+            background-color: white;
+            color: #3F9CFB;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 14px 0;
+            width: 90%;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0;
+            visibility: hidden;
+            transition: bottom 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+        }
+    }
+    .fikrlar-btn2 {
+        padding: 30px 0;
+        text-align: center;
+        a {
+            padding: 20px 34px;
+            color: white;
+            background-color:#3F9CFB;
+            border-radius: 10px;
+            transition: 0.5s ease;
+            font-size: 18px;
+            font-weight: bold;
+            &:hover {
+                background-color: darken($color: #3F9CFB, $amount: 20%);
+                transition: 0.5s ease;
+            }
+        }
+    }
+}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .fikrlar {
+    width: 95%;
+    margin: 0 auto;
+    .row {
+        display: flex;
+        flex-wrap: nowrap; /* O'ralishni oldini oladi, barcha elementlar bir qatorga joylashadi */
+        overflow-x: hidden; /* Agar kontent sig'masa, gorizontal aylantirishga ruxsat beradi */
+    }
+    .col-lg-3 {
+        flex: 0 0 25%; /* Har bir ustun kengligi qatorning 25% qismiga teng bo'ladi */
+        max-width: 25%; /* Har bir ustunning maksimal kengligi 25% bo'lishiga ishonch hosil qilinadi */
+        box-sizing: border-box; /* Padding va border hisobga olinadi */
+    }
+    
+    .left-right {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .chevron {
+        display: flex;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .card {
+        border-radius: 20px;
+        transition: 0.5s ease;
+        position: relative;
+        background-color: #f9fcfe;
+        
+        &:hover {
+            background-color: #3F9CFB;
+            transition: 0.5s ease;
+        }
+
+        &:hover .fikrlar-btn {
+            bottom: 20px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        img {
+            border-radius: 20px;
+            width: 100%; /* Rasm kengligini kartaga moslab qo'yish */
+        }
+
+        .bi-play-fill {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 40px;
+            color: #3F9CFB;
+        }
+
+        .fikrlar-btn {
+            position: absolute;
+            border: 1px solid white;
+            background-color: white;
+            color: #3F9CFB;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 14px 0;
+            width: 90%;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0;
+            visibility: hidden;
+            transition: bottom 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+        }
+    }
+    .fikrlar-btn2 {
+        padding: 30px 0;
+        text-align: center;
+        a {
+            padding: 20px 34px;
+            color: white;
+            background-color:#3F9CFB;
+            border-radius: 10px;
+            transition: 0.5s ease;
+            font-size: 18px;
+            font-weight: bold;
+            &:hover {
+                background-color: darken($color: #3F9CFB, $amount: 20%);
+                transition: 0.5s ease;
+            }
+        }
+    }
+}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .fikrlar {
+    width: 95%;
+    margin: 0 auto;
+    .row {
+        display: flex;
+        flex-wrap: nowrap; /* O'ralishni oldini oladi, barcha elementlar bir qatorga joylashadi */
+        overflow-x: hidden; /* Agar kontent sig'masa, gorizontal aylantirishga ruxsat beradi */
+    }
+    .col-lg-3 {
+        flex: 0 0 25%; /* Har bir ustun kengligi qatorning 25% qismiga teng bo'ladi */
+        max-width: 25%; /* Har bir ustunning maksimal kengligi 25% bo'lishiga ishonch hosil qilinadi */
+        box-sizing: border-box; /* Padding va border hisobga olinadi */
+    }
+    
+    .left-right {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .chevron {
+        display: flex;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .card {
+        border-radius: 20px;
+        transition: 0.5s ease;
+        position: relative;
+        background-color: #f9fcfe;
+        
+        &:hover {
+            background-color: #3F9CFB;
+            transition: 0.5s ease;
+        }
+
+        &:hover .fikrlar-btn {
+            bottom: 20px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        img {
+            border-radius: 20px;
+            width: 100%; /* Rasm kengligini kartaga moslab qo'yish */
+        }
+
+        .bi-play-fill {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 40px;
+            color: #3F9CFB;
+        }
+
+        .fikrlar-btn {
+            position: absolute;
+            border: 1px solid white;
+            background-color: white;
+            color: #3F9CFB;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 14px 0;
+            width: 90%;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0;
+            visibility: hidden;
+            transition: bottom 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+        }
+    }
+    .fikrlar-btn2 {
+        padding: 30px 0;
+        text-align: center;
+        a {
+            padding: 20px 34px;
+            color: white;
+            background-color:#3F9CFB;
+            border-radius: 10px;
+            transition: 0.5s ease;
+            font-size: 18px;
+            font-weight: bold;
+            &:hover {
+                background-color: darken($color: #3F9CFB, $amount: 20%);
+                transition: 0.5s ease;
+            }
+        }
+    }
+}
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .fikrlar {
+    width: 95%;
+    margin: 0 auto;
+    .row {
+        display: flex;
+        flex-wrap: nowrap; /* O'ralishni oldini oladi, barcha elementlar bir qatorga joylashadi */
+        overflow-x: hidden; /* Agar kontent sig'masa, gorizontal aylantirishga ruxsat beradi */
+    }
+    .col-lg-3 {
+        flex: 0 0 25%; /* Har bir ustun kengligi qatorning 25% qismiga teng bo'ladi */
+        max-width: 25%; /* Har bir ustunning maksimal kengligi 25% bo'lishiga ishonch hosil qilinadi */
+        box-sizing: border-box; /* Padding va border hisobga olinadi */
+    }
+    
+    .left-right {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .chevron {
+        display: flex;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .card {
+        border-radius: 20px;
+        transition: 0.5s ease;
+        position: relative;
+        background-color: #f9fcfe;
+        
+        &:hover {
+            background-color: #3F9CFB;
+            transition: 0.5s ease;
+        }
+
+        &:hover .fikrlar-btn {
+            bottom: 20px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        img {
+            border-radius: 20px;
+            width: 100%; /* Rasm kengligini kartaga moslab qo'yish */
+        }
+
+        .bi-play-fill {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 40px;
+            color: #3F9CFB;
+        }
+
+        .fikrlar-btn {
+            position: absolute;
+            border: 1px solid white;
+            background-color: white;
+            color: #3F9CFB;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 14px 0;
+            width: 90%;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0;
+            visibility: hidden;
+            transition: bottom 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+        }
+    }
+    .fikrlar-btn2 {
+        padding: 30px 0;
+        text-align: center;
+        a {
+            padding: 20px 34px;
+            color: white;
+            background-color:#3F9CFB;
+            border-radius: 10px;
+            transition: 0.5s ease;
+            font-size: 18px;
+            font-weight: bold;
+            &:hover {
+                background-color: darken($color: #3F9CFB, $amount: 20%);
+                transition: 0.5s ease;
+            }
+        }
+    }
+}
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .fikrlar {
+    width: 95%;
+    margin: 0 auto;
+    .row {
+        display: flex;
+        flex-wrap: nowrap; /* O'ralishni oldini oladi, barcha elementlar bir qatorga joylashadi */
+        overflow-x: hidden; /* Agar kontent sig'masa, gorizontal aylantirishga ruxsat beradi */
+    }
+    .col-lg-3 {
+        flex: 0 0 25%; /* Har bir ustun kengligi qatorning 25% qismiga teng bo'ladi */
+        max-width: 25%; /* Har bir ustunning maksimal kengligi 25% bo'lishiga ishonch hosil qilinadi */
+        box-sizing: border-box; /* Padding va border hisobga olinadi */
+    }
+    
+    .left-right {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .chevron {
+        display: flex;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .card {
+        border-radius: 20px;
+        transition: 0.5s ease;
+        position: relative;
+        background-color: #f9fcfe;
+        
+        &:hover {
+            background-color: #3F9CFB;
+            transition: 0.5s ease;
+        }
+
+        &:hover .fikrlar-btn {
+            bottom: 20px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        img {
+            border-radius: 20px;
+            width: 100%; /* Rasm kengligini kartaga moslab qo'yish */
+        }
+
+        .bi-play-fill {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 40px;
+            color: #3F9CFB;
+        }
+
+        .fikrlar-btn {
+            position: absolute;
+            border: 1px solid white;
+            background-color: white;
+            color: #3F9CFB;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 14px 0;
+            width: 90%;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0;
+            visibility: hidden;
+            transition: bottom 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+        }
+    }
+    .fikrlar-btn2 {
+        padding: 30px 0;
+        text-align: center;
+        a {
+            padding: 20px 34px;
+            color: white;
+            background-color:#3F9CFB;
+            border-radius: 10px;
+            transition: 0.5s ease;
+            font-size: 18px;
+            font-weight: bold;
+            &:hover {
+                background-color: darken($color: #3F9CFB, $amount: 20%);
+                transition: 0.5s ease;
+            }
+        }
+    }
+}
+}

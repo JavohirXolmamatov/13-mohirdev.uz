@@ -1,0 +1,677 @@
+// kasblar 
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.8px) {
+    .kasblar {
+    background-color: #091621;
+    color: white;
+    padding-bottom: 2rem;
+
+    .kasblar-box {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 3rem;
+    
+        h1 {
+            font-size: 2.5rem;
+        }
+    
+        p {
+            padding-top: 20px;
+            color: rgb(170, 170, 170);
+            font-size: 18px;
+        }
+    }
+    
+    .kasblar-btn {
+        display: none;        
+        align-items: center;
+        vertical-align: middle;
+        padding: 50px 0;
+        gap: 1.4rem;
+        a {
+            padding: 12px 40px;
+            border: 2px solid #206FB9;
+            border-radius: 10px;
+            background-color: #091621;
+            color: #206FB9;
+            transition: 0.5s ease;
+            margin: 0;
+            &:hover {
+                background-color: #206FB9;
+                transition: 0.5s ease;
+                color: white;
+            }
+        } 
+    }
+
+    .row {
+        gap: 2rem;
+        box-sizing:border-box;
+        margin: 0;
+        .col-12  {
+            padding: 0;
+            border-radius: 20px;
+            background-color: #091621;
+            border: 0;
+            height: 480px;
+            width: 450px;
+        
+            .card {
+                border-radius: 20px;
+                background-color: #0B1E2B;
+                padding: 40px;
+                position: relative;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                
+        
+                .title {
+                    color: rgb(170, 170, 170);
+                    padding-bottom: 20px;
+                }
+        
+                .h4 {
+                    color: white;
+                    padding-bottom: 40px;
+                }
+        
+                .batafsil {
+                    text-transform: uppercase;
+                    a {
+                        color: #206FB9;
+                    }
+                }
+        
+                img {
+                    position: absolute;
+                    width: 320px;
+                    top: 150px;
+                    left: 100px;
+                    filter: drop-shadow(0px 0px 130px rgb(22, 122, 209));
+        
+                }
+            }
+        
+        }
+    }
+    .kasblar-button {
+        padding-top: 30px;
+        margin: 0 auto;
+        text-align: center;
+        .btn {
+            padding: 14px 48px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            filter: drop-shadow(0px 5px 10px rgb(22, 122, 209));
+        }
+    }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .kasblar {
+        background-color: #091621;
+        color: white;
+        padding-bottom: 2rem;
+    
+        .kasblar-box {
+            width: 95%;
+            margin: 0 auto;
+            padding-top: 3rem;
+        
+            h1 {
+                font-size: 2.5rem;
+            }
+        
+            p {
+                padding-top: 20px;
+                color: rgb(170, 170, 170);
+                font-size: 18px;
+            }
+        }
+        
+        .kasblar-btn {
+            display: none;        
+            align-items: center;
+            vertical-align: middle;
+            padding: 50px 0;
+            gap: 1.4rem;
+            a {
+                padding: 12px 40px;
+                border: 2px solid #206FB9;
+                border-radius: 10px;
+                background-color: #091621;
+                color: #206FB9;
+                transition: 0.5s ease;
+                margin: 0;
+                &:hover {
+                    background-color: #206FB9;
+                    transition: 0.5s ease;
+                    color: white;
+                }
+            } 
+        }
+    
+        .row {
+            gap: 2rem;
+            box-sizing:border-box;
+            margin: 0;
+            .col-12  {
+                padding: 0;
+                border-radius: 20px;
+                background-color: #091621;
+                border: 0;
+                height: 480px;
+                width: 450px;
+            
+                .card {
+                    border-radius: 20px;
+                    background-color: #0B1E2B;
+                    padding: 40px;
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    
+            
+                    .title {
+                        color: rgb(170, 170, 170);
+                        padding-bottom: 20px;
+                    }
+            
+                    .h4 {
+                        color: white;
+                        padding-bottom: 40px;
+                    }
+            
+                    .batafsil {
+                        text-transform: uppercase;
+                        a {
+                            color: #206FB9;
+                        }
+                    }
+            
+                    img {
+                        position: absolute;
+                        width: 320px;
+                        top: 150px;
+                        left: 100px;
+                        filter: drop-shadow(0px 0px 130px rgb(22, 122, 209));
+            
+                    }
+                }
+            
+            }
+        }
+        .kasblar-button {
+            padding-top: 30px;
+            margin: 0 auto;
+            text-align: center;
+            .btn {
+                padding: 14px 48px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                filter: drop-shadow(0px 5px 10px rgb(22, 122, 209));
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .kasblar {
+    background-color: #091621;
+    color: white;
+    padding-bottom: 50px;
+
+    .kasblar-box {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 100px;
+    
+        h1 {
+            font-size: 54px;
+        }
+    
+        p {
+            padding-top: 20px;
+            color: rgb(170, 170, 170);
+            font-size: 18px;
+        }
+    }
+    
+    .kasblar-btn {
+        display: flex;        
+        align-items: center;
+        vertical-align: middle;
+        padding: 50px 0;
+        gap: 1.4rem;
+        a {
+            padding: 12px 40px;
+            border: 2px solid #206FB9;
+            border-radius: 10px;
+            background-color: #091621;
+            color: #206FB9;
+            transition: 0.5s ease;
+            margin: 0;
+            &:hover {
+                background-color: #206FB9;
+                transition: 0.5s ease;
+                color: white;
+            }
+        } 
+    }
+
+    .row {
+        gap: 2rem;
+        box-sizing:border-box;
+        margin: 0;
+        .col-lg-4 {
+            padding: 0;
+            border-radius: 20px;
+            background-color: #091621;
+            border: 0;
+            height: 480px;
+            width: 450px;
+        
+            .card {
+                border-radius: 20px;
+                background-color: #0B1E2B;
+                padding: 40px;
+                position: relative;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                
+        
+                .title {
+                    color: rgb(170, 170, 170);
+                    padding-bottom: 20px;
+                }
+        
+                .h4 {
+                    color: white;
+                    padding-bottom: 40px;
+                }
+        
+                .batafsil {
+                    text-transform: uppercase;
+                    a {
+                        color: #206FB9;
+                    }
+                }
+        
+                img {
+                    position: absolute;
+                    width: 360px;
+                    top: 150px;
+                    left: 100px;
+                    filter: drop-shadow(0px 0px 130px rgb(22, 122, 209));
+        
+                }
+            }
+        
+        }
+    }
+    .kasblar-button {
+        padding-top: 30px;
+        margin: 0 auto;
+        text-align: center;
+        .btn {
+            padding: 14px 48px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            filter: drop-shadow(0px 5px 10px rgb(22, 122, 209));
+        }
+    }
+}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .kasblar {
+    background-color: #091621;
+    color: white;
+    padding-bottom: 50px;
+
+    .kasblar-box {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 100px;
+    
+        h1 {
+            font-size: 54px;
+        }
+    
+        p {
+            padding-top: 20px;
+            color: rgb(170, 170, 170);
+            font-size: 18px;
+        }
+    }
+    
+    .kasblar-btn {
+        display: flex;        
+        align-items: center;
+        vertical-align: middle;
+        padding: 50px 0;
+        gap: 1.4rem;
+        a {
+            padding: 12px 40px;
+            border: 2px solid #206FB9;
+            border-radius: 10px;
+            background-color: #091621;
+            color: #206FB9;
+            transition: 0.5s ease;
+            margin: 0;
+            &:hover {
+                background-color: #206FB9;
+                transition: 0.5s ease;
+                color: white;
+            }
+        } 
+    }
+
+    .row {
+        gap: 2rem;
+        box-sizing:border-box;
+        margin: 0;
+        .col-lg-4 {
+            padding: 0;
+            border-radius: 20px;
+            background-color: #091621;
+            border: 0;
+            height: 480px;
+            width: 450px;
+        
+            .card {
+                border-radius: 20px;
+                background-color: #0B1E2B;
+                padding: 40px;
+                position: relative;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                
+        
+                .title {
+                    color: rgb(170, 170, 170);
+                    padding-bottom: 20px;
+                }
+        
+                .h4 {
+                    color: white;
+                    padding-bottom: 40px;
+                }
+        
+                .batafsil {
+                    text-transform: uppercase;
+                    a {
+                        color: #206FB9;
+                    }
+                }
+        
+                img {
+                    position: absolute;
+                    width: 360px;
+                    top: 150px;
+                    left: 100px;
+                    filter: drop-shadow(0px 0px 130px rgb(22, 122, 209));
+        
+                }
+            }
+        
+        }
+    }
+    .kasblar-button {
+        padding-top: 30px;
+        margin: 0 auto;
+        text-align: center;
+        .btn {
+            padding: 14px 48px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            filter: drop-shadow(0px 5px 10px rgb(22, 122, 209));
+        }
+    }
+}
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .kasblar {
+    background-color: #091621;
+    color: white;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2.8rem;
+    width: 100%;
+
+    .kasblar-box {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        padding-top: 100px;
+    
+        h1 {
+            font-size: 3rem;
+        }
+    
+        p {
+            padding-top: 1rem;
+            color: rgb(170, 170, 170);
+            font-size: 1rem;
+        }
+    }
+    
+    .kasblar-btn {
+        display: flex;        
+        align-items: center;
+        vertical-align: middle;
+        padding:2.8rem 0;
+        gap: 1.4rem;
+        a {
+            padding: 12px 40px;
+            border: 2px solid #206FB9;
+            border-radius: 10px;
+            background-color: #091621;
+            color: #206FB9;
+            transition: 0.5s ease;
+            margin: 0;
+            &:hover {
+                background-color: #206FB9;
+                transition: 0.5s ease;
+                color: white;
+            }
+        } 
+    }
+
+    .row {
+        gap: 2rem;
+        box-sizing:border-box;
+        margin: 0;
+        padding: 0;
+        .col-xl-4 {
+            padding: 0;
+            border-radius: 20px;
+            background-color: #091621;
+            border: 0;
+            height: 410px;
+            width: calc((100% / 3) - 1.4rem);
+            box-sizing: border-box;
+        
+            .card {
+                border-radius: 20px;
+                background-color: #0B1E2B;
+                padding: 40px;
+                position: relative;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                overflow: hidden;
+                
+        
+                .title {
+                    color: rgb(170, 170, 170);
+                    padding-bottom: 20px;
+                }
+        
+                .h4 {
+                    color: white;
+                    padding-bottom: 40px;
+                }
+        
+                .batafsil {
+                    text-transform: uppercase;
+                    a {
+                        color: #206FB9;
+                    }
+                }
+        
+                img {
+                    position: absolute;
+                    width: 340px;
+                    top: 100px;
+                    left: 100px;
+                    filter: drop-shadow(0px 0px 130px rgb(22, 122, 209));
+                    box-sizing: border-box;
+                }
+            }
+        
+        }
+    }
+    .kasblar-button {
+        padding-top: 30px;
+        margin: 0 auto;
+        text-align: center;
+        .btn {
+            padding: 14px 48px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            filter: drop-shadow(0px 5px 10px rgb(22, 122, 209));
+        }
+    }
+}
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .kasblar {
+    background-color: #091621;
+    color: white;
+    padding-bottom: 50px;
+
+    .kasblar-box {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 100px;
+    
+        h1 {
+            font-size: 54px;
+        }
+    
+        p {
+            padding-top: 20px;
+            color: rgb(170, 170, 170);
+            font-size: 18px;
+        }
+    }
+    
+    .kasblar-btn {
+        display: flex;        
+        align-items: center;
+        vertical-align: middle;
+        padding: 50px 0;
+        gap: 1.4rem;
+        a {
+            padding: 12px 40px;
+            border: 2px solid #206FB9;
+            border-radius: 10px;
+            background-color: #091621;
+            color: #206FB9;
+            transition: 0.5s ease;
+            margin: 0;
+            &:hover {
+                background-color: #206FB9;
+                transition: 0.5s ease;
+                color: white;
+            }
+        } 
+    }
+
+    .row {
+        gap: 2rem;
+        box-sizing:border-box;
+        margin: 0;
+        .col-lg-4 {
+            padding: 0;
+            border-radius: 20px;
+            background-color: #091621;
+            border: 0;
+            height: 480px;
+            width: 450px;
+        
+            .card {
+                border-radius: 20px;
+                background-color: #0B1E2B;
+                padding: 40px;
+                position: relative;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                
+        
+                .title {
+                    color: rgb(170, 170, 170);
+                    padding-bottom: 20px;
+                }
+        
+                .h4 {
+                    color: white;
+                    padding-bottom: 40px;
+                }
+        
+                .batafsil {
+                    text-transform: uppercase;
+                    a {
+                        color: #206FB9;
+                    }
+                }
+        
+                img {
+                    position: absolute;
+                    width: 360px;
+                    top: 150px;
+                    left: 100px;
+                    filter: drop-shadow(0px 0px 130px rgb(22, 122, 209));
+        
+                }
+            }
+        
+        }
+    }
+    .kasblar-button {
+        padding-top: 30px;
+        margin: 0 auto;
+        text-align: center;
+        .btn {
+            padding: 14px 48px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            filter: drop-shadow(0px 5px 10px rgb(22, 122, 209));
+        }
+    }
+}
+}
+
+
+

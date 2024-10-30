@@ -1,0 +1,812 @@
+//  Bosh sahifa uchun.
+@import '../utils/mixins';
+
+
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.8px) {
+    .home-section {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1.8rem;
+        .row {
+            border-radius: 1rem;
+            background-image: linear-gradient(120deg, #ecf1ff 0%, #f4fbff 100%);
+            height: auto;
+            position: relative;
+            padding: 4rem 1rem 0 1rem;
+            margin: 0;
+        }
+    
+        .left {
+            text-align: center;
+            padding-bottom: 2rem;
+    
+            h5 {
+                text-transform: uppercase;
+                color: #8CCEFA;
+                font-size: 1.2rem;
+                padding-bottom: 0.5rem;
+                letter-spacing: 0.2rem;
+            }
+    
+            h1 {
+                font-size: 2.5rem;
+                font-weight: bold;
+                padding-bottom: 4rem;
+            }
+    
+            .link-btn {
+                padding: 1.2rem 3rem;
+                background-color: #608aff;
+                color:white;
+                border-radius: 0.5rem;
+                font-size: 1rem;
+                font-weight: bold;
+                transition: transform 0.5s ease;
+                box-shadow: 0px 0px 1.3rem 13px rgba(97, 134, 249, 0.18);
+    
+                &:hover {
+                    background-color:#4c7cff;
+                    transform: scale(1.1);
+                    transition: 0.5s ease;
+                    transition: transform 0.5s ease;
+                }
+            }
+        }
+    
+        .right {
+            position: relative;
+            padding-top: 2rem;
+            height: 22rem;
+            
+            
+            .figure-1 {
+                position: absolute;
+                top: 2rem;
+                left: 1.3rem;
+                width: 9rem;
+                height: 9rem;
+                margin: 0;
+                border-radius: 0.9rem;
+                overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+                box-shadow: 25px 25px 0px -3px rgba(100, 186, 252, 0.61);
+                
+            }
+    
+            .video {
+                width: 100%;
+                height: auto;
+                border-radius: 0.9rem;
+                display: block;
+            }
+    
+            .figure-2 {
+                position: absolute;
+                bottom: 5rem;
+                right: 1.3rem;
+                width: 9rem;
+                height: 10rem;
+                margin: 0;
+                border-radius: 0.9rem;
+                overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+                object-fit: cover;
+            }
+    
+            img {
+                object-fit: cover;
+                width: 100%;
+                border-radius: 0.9rem;
+            }
+    
+    
+            .figure-3 {
+                position: absolute;
+                bottom: 1.5rem;
+                right: 6.5rem;
+                width: 7rem;
+                height: 7rem;
+                margin: 0;
+                border-radius: 50%;
+                overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+                background-color:#F2F8FF;
+            
+                .box {
+                    position: absolute;
+                    bottom: 50%; // O'zgarish: bottom qiymatini 0 ga o'zgartiring
+                    right: 50%; // O'zgarish: right qiymatini 0 ga o'zgartiring
+                    width: 50%; // To'liq kenglikda
+                    height: 50%; // To'liq balandlikda
+                    transform: translate(50%, 50%); // O'rtaga joylash
+                    border-radius: 50%;
+                    background-color: #86a6ff;
+                }
+            
+                .bi-code-slash {
+                    position: absolute; // O'zgartirish
+                    bottom: 50%; // O'rta qilish uchun
+                    right: 50%; // O'rta qilish uchun
+                    transform: translate(50%, 50%); // O'rtaga joylash
+                    font-size: 3rem; // O'lchamni belgilash
+                    color: white; // Rangini belgilash
+                    font-weight: bolder !important;
+                    z-index: 1; // Ko'rinishini ta'minlash
+                }
+            }
+            
+    
+        }
+    
+        
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .home-section {
+    width: 95%;
+    height: 85vh;
+    margin: 0 auto;
+    .row {
+        border-radius: 20px;
+        background-image: linear-gradient(120deg, #ecf1ff 0%, #f4fbff 100%);
+        height: 100%;
+        position: relative;
+    }
+
+    .left {
+        @include center-flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 0 80px;
+
+        h5 {
+            text-transform: uppercase;
+            color: #8CCEFA;
+        }
+
+        h1 {
+            font-size: 3.55rem;
+            font-weight: bold;
+        }
+
+        .link-btn {
+            margin-top: 40px;
+            padding: 14px 34px;
+            background-color: #608aff;
+            color:white;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.5s ease;
+            box-shadow: 0px 0px 26px 13px rgba(97, 134, 249, 0.18);
+
+            &:hover {
+                background-color:#4c7cff;
+                transform: scale(1.1);
+                transition: 0.5s ease;
+                transition: transform 0.5s ease;
+            }
+        }
+    }
+
+    .right {
+        @include center-flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 0 80px;
+        position: relative;
+        
+        .figure-1 {
+            position: absolute;
+            top: 150px;
+            width: 230px;
+            // height: 230px;
+            margin: 0;
+            border-radius: 15px;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            box-shadow: 50px 50px 0px -3px rgba(100, 186, 252, 0.61);
+            
+        }
+
+        .video {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            display: block;
+        }
+
+        .figure-2 {
+            position: absolute;
+            top: 270px;
+            right: 175px;
+            width: 230px;
+            height: 270px;
+            margin: 0;
+            border-radius: 15px;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            object-fit: cover;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+
+        .figure-3 {
+            position: absolute;
+            bottom: 10px;
+            right: 310px;
+            width: 180px;
+            height: 180px;
+            margin: 0;
+            border-radius: 50%;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            background-color:#F2F8FF;
+        
+            .box {
+                position: absolute;
+                bottom: 50%; // O'zgarish: bottom qiymatini 0 ga o'zgartiring
+                right: 50%; // O'zgarish: right qiymatini 0 ga o'zgartiring
+                width: 50%; // To'liq kenglikda
+                height: 50%; // To'liq balandlikda
+                transform: translate(50%, 50%); // O'rtaga joylash
+                border-radius: 50%;
+                background-color: #86a6ff;
+            }
+        
+            .bi-code-slash {
+                position: absolute; // O'zgartirish
+                bottom: 50%; // O'rta qilish uchun
+                right: 50%; // O'rta qilish uchun
+                transform: translate(50%, 50%); // O'rtaga joylash
+                font-size: 48px; // O'lchamni belgilash
+                color: white; // Rangini belgilash
+                font-weight: bolder !important;
+                z-index: 1; // Ko'rinishini ta'minlash
+            }
+        }
+        
+
+    }
+
+    
+}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .home-section {
+    width: 95%;
+    height: 85vh;
+    margin: 0 auto;
+    .row {
+        border-radius: 20px;
+        background-image: linear-gradient(120deg, #ecf1ff 0%, #f4fbff 100%);
+        height: 100%;
+        position: relative;
+    }
+
+    .left {
+        @include center-flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 0 80px;
+
+        h5 {
+            text-transform: uppercase;
+            color: #8CCEFA;
+        }
+
+        h1 {
+            font-size: 3.55rem;
+            font-weight: bold;
+        }
+
+        .link-btn {
+            margin-top: 40px;
+            padding: 14px 34px;
+            background-color: #608aff;
+            color:white;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.5s ease;
+            box-shadow: 0px 0px 26px 13px rgba(97, 134, 249, 0.18);
+
+            &:hover {
+                background-color:#4c7cff;
+                transform: scale(1.1);
+                transition: 0.5s ease;
+                transition: transform 0.5s ease;
+            }
+        }
+    }
+
+    .right {
+        @include center-flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 0 80px;
+        position: relative;
+        
+        .figure-1 {
+            position: absolute;
+            top: 150px;
+            width: 230px;
+            // height: 230px;
+            margin: 0;
+            border-radius: 15px;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            box-shadow: 50px 50px 0px -3px rgba(100, 186, 252, 0.61);
+            
+        }
+
+        .video {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            display: block;
+        }
+
+        .figure-2 {
+            position: absolute;
+            top: 270px;
+            right: 175px;
+            width: 230px;
+            height: 270px;
+            margin: 0;
+            border-radius: 15px;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            object-fit: cover;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+
+        .figure-3 {
+            position: absolute;
+            bottom: 10px;
+            right: 310px;
+            width: 180px;
+            height: 180px;
+            margin: 0;
+            border-radius: 50%;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            background-color:#F2F8FF;
+        
+            .box {
+                position: absolute;
+                bottom: 50%; // O'zgarish: bottom qiymatini 0 ga o'zgartiring
+                right: 50%; // O'zgarish: right qiymatini 0 ga o'zgartiring
+                width: 50%; // To'liq kenglikda
+                height: 50%; // To'liq balandlikda
+                transform: translate(50%, 50%); // O'rtaga joylash
+                border-radius: 50%;
+                background-color: #86a6ff;
+            }
+        
+            .bi-code-slash {
+                position: absolute; // O'zgartirish
+                bottom: 50%; // O'rta qilish uchun
+                right: 50%; // O'rta qilish uchun
+                transform: translate(50%, 50%); // O'rtaga joylash
+                font-size: 48px; // O'lchamni belgilash
+                color: white; // Rangini belgilash
+                font-weight: bolder !important;
+                z-index: 1; // Ko'rinishini ta'minlash
+            }
+        }
+        
+
+    }
+
+    
+}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .home-section {
+    width: 95%;
+    height: 85vh;
+    margin: 0 auto;
+    .row {
+        border-radius: 20px;
+        background-image: linear-gradient(120deg, #ecf1ff 0%, #f4fbff 100%);
+        height: 100%;
+        position: relative;
+    }
+
+    .left {
+        @include center-flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 0 80px;
+
+        h5 {
+            text-transform: uppercase;
+            color: #8CCEFA;
+        }
+
+        h1 {
+            font-size: 3.55rem;
+            font-weight: bold;
+        }
+
+        .link-btn {
+            margin-top: 40px;
+            padding: 14px 34px;
+            background-color: #608aff;
+            color:white;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.5s ease;
+            box-shadow: 0px 0px 26px 13px rgba(97, 134, 249, 0.18);
+
+            &:hover {
+                background-color:#4c7cff;
+                transform: scale(1.1);
+                transition: 0.5s ease;
+                transition: transform 0.5s ease;
+            }
+        }
+    }
+
+    .right {
+        @include center-flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 0 80px;
+        position: relative;
+        
+        .figure-1 {
+            position: absolute;
+            top: 150px;
+            width: 230px;
+            // height: 230px;
+            margin: 0;
+            border-radius: 15px;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            box-shadow: 50px 50px 0px -3px rgba(100, 186, 252, 0.61);
+            
+        }
+
+        .video {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            display: block;
+        }
+
+        .figure-2 {
+            position: absolute;
+            top: 270px;
+            right: 175px;
+            width: 230px;
+            height: 270px;
+            margin: 0;
+            border-radius: 15px;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            object-fit: cover;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+
+        .figure-3 {
+            position: absolute;
+            bottom: 10px;
+            right: 310px;
+            width: 180px;
+            height: 180px;
+            margin: 0;
+            border-radius: 50%;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            background-color:#F2F8FF;
+        
+            .box {
+                position: absolute;
+                bottom: 50%; // O'zgarish: bottom qiymatini 0 ga o'zgartiring
+                right: 50%; // O'zgarish: right qiymatini 0 ga o'zgartiring
+                width: 50%; // To'liq kenglikda
+                height: 50%; // To'liq balandlikda
+                transform: translate(50%, 50%); // O'rtaga joylash
+                border-radius: 50%;
+                background-color: #86a6ff;
+            }
+        
+            .bi-code-slash {
+                position: absolute; // O'zgartirish
+                bottom: 50%; // O'rta qilish uchun
+                right: 50%; // O'rta qilish uchun
+                transform: translate(50%, 50%); // O'rtaga joylash
+                font-size: 48px; // O'lchamni belgilash
+                color: white; // Rangini belgilash
+                font-weight: bolder !important;
+                z-index: 1; // Ko'rinishini ta'minlash
+            }
+        }
+        
+
+    }
+
+    
+}
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .home-section {
+    width: 95%;
+    height: 85vh;
+    margin: 0 auto;
+    .row {
+        border-radius: 20px;
+        background-image: linear-gradient(120deg, #ecf1ff 0%, #f4fbff 100%);
+        height: 100%;
+        position: relative;
+    }
+
+    .left {
+        @include center-flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 0 80px;
+
+        h5 {
+            text-transform: uppercase;
+            color: #8CCEFA;
+        }
+
+        h1 {
+            font-size: 3.55rem;
+            font-weight: bold;
+        }
+
+        .link-btn {
+            margin-top: 40px;
+            padding: 14px 34px;
+            background-color: #608aff;
+            color:white;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.5s ease;
+            box-shadow: 0px 0px 26px 13px rgba(97, 134, 249, 0.18);
+
+            &:hover {
+                background-color:#4c7cff;
+                transform: scale(1.1);
+                transition: 0.5s ease;
+                transition: transform 0.5s ease;
+            }
+        }
+    }
+
+    .right {
+        @include center-flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 0 80px;
+        position: relative;
+        
+        .figure-1 {
+            position: absolute;
+            top: 150px;
+            width: 230px;
+            // height: 230px;
+            margin: 0;
+            border-radius: 15px;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            box-shadow: 50px 50px 0px -3px rgba(100, 186, 252, 0.61);
+            
+        }
+
+        .video {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            display: block;
+        }
+
+        .figure-2 {
+            position: absolute;
+            top: 270px;
+            right: 175px;
+            width: 230px;
+            height: 270px;
+            margin: 0;
+            border-radius: 15px;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            object-fit: cover;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+
+        .figure-3 {
+            position: absolute;
+            bottom: 10px;
+            right: 310px;
+            width: 180px;
+            height: 180px;
+            margin: 0;
+            border-radius: 50%;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            background-color:#F2F8FF;
+        
+            .box {
+                position: absolute;
+                bottom: 50%; // O'zgarish: bottom qiymatini 0 ga o'zgartiring
+                right: 50%; // O'zgarish: right qiymatini 0 ga o'zgartiring
+                width: 50%; // To'liq kenglikda
+                height: 50%; // To'liq balandlikda
+                transform: translate(50%, 50%); // O'rtaga joylash
+                border-radius: 50%;
+                background-color: #86a6ff;
+            }
+        
+            .bi-code-slash {
+                position: absolute; // O'zgartirish
+                bottom: 50%; // O'rta qilish uchun
+                right: 50%; // O'rta qilish uchun
+                transform: translate(50%, 50%); // O'rtaga joylash
+                font-size: 48px; // O'lchamni belgilash
+                color: white; // Rangini belgilash
+                font-weight: bolder !important;
+                z-index: 1; // Ko'rinishini ta'minlash
+            }
+        }
+        
+
+    }
+
+    
+}
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .home-section {
+    width: 95%;
+    height: 85vh;
+    margin: 0 auto;
+    .row {
+        border-radius: 20px;
+        background-image: linear-gradient(120deg, #ecf1ff 0%, #f4fbff 100%);
+        height: 100%;
+        position: relative;
+    }
+
+    .left {
+        @include center-flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 0 80px;
+
+        h5 {
+            text-transform: uppercase;
+            color: #8CCEFA;
+        }
+
+        h1 {
+            font-size: 3.55rem;
+            font-weight: bold;
+        }
+
+        .link-btn {
+            margin-top: 40px;
+            padding: 14px 34px;
+            background-color: #608aff;
+            color:white;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.5s ease;
+            box-shadow: 0px 0px 26px 13px rgba(97, 134, 249, 0.18);
+
+            &:hover {
+                background-color:#4c7cff;
+                transform: scale(1.1);
+                transition: 0.5s ease;
+                transition: transform 0.5s ease;
+            }
+        }
+    }
+
+    .right {
+        @include center-flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 0 80px;
+        position: relative;
+        
+        .figure-1 {
+            position: absolute;
+            top: 150px;
+            width: 230px;
+            // height: 230px;
+            margin: 0;
+            border-radius: 15px;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            box-shadow: 50px 50px 0px -3px rgba(100, 186, 252, 0.61);
+            
+        }
+
+        .video {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            display: block;
+        }
+
+        .figure-2 {
+            position: absolute;
+            top: 270px;
+            right: 175px;
+            width: 230px;
+            height: 270px;
+            margin: 0;
+            border-radius: 15px;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            object-fit: cover;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+
+        .figure-3 {
+            position: absolute;
+            bottom: 10px;
+            right: 310px;
+            width: 180px;
+            height: 180px;
+            margin: 0;
+            border-radius: 50%;
+            overflow: hidden; /* Radiusning video elementda ishlashi uchun */
+            background-color:#F2F8FF;
+        
+            .box {
+                position: absolute;
+                bottom: 50%; // O'zgarish: bottom qiymatini 0 ga o'zgartiring
+                right: 50%; // O'zgarish: right qiymatini 0 ga o'zgartiring
+                width: 50%; // To'liq kenglikda
+                height: 50%; // To'liq balandlikda
+                transform: translate(50%, 50%); // O'rtaga joylash
+                border-radius: 50%;
+                background-color: #86a6ff;
+            }
+        
+            .bi-code-slash {
+                position: absolute; // O'zgartirish
+                bottom: 50%; // O'rta qilish uchun
+                right: 50%; // O'rta qilish uchun
+                transform: translate(50%, 50%); // O'rtaga joylash
+                font-size: 48px; // O'lchamni belgilash
+                color: white; // Rangini belgilash
+                font-weight: bolder !important;
+                z-index: 1; // Ko'rinishini ta'minlash
+            }
+        }
+        
+
+    }
+
+    
+}
+}

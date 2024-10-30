@@ -1,0 +1,449 @@
+// Saytning bosh qismi (header) uchun.
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.8px) {
+    // Navigatsiya menyusi styli.
+    .header {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        height: 80px;
+        border-bottom: 1px solid rgb(244, 243, 243);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadov qo'shish */
+        backdrop-filter: blur(15px); /* Orqa tarafdagi elementlarni xiralashtiradi */
+        z-index: 100;
+        margin: 0;
+        padding: 0;
+
+        .nav {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-btn {
+            font-size: 3rem;
+            justify-content: flex-end;
+            padding-right: 1.5rem;
+        }
+
+        .nav-items {
+            display: flex;
+            gap: 3rem;
+            margin: 0;
+        }
+
+        .nav-item {
+            display: none;
+            height: 80px;
+            // display: flex;
+            align-items: center;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        .left {
+            display: flex;
+            justify-content: flex-start;
+            margin-right:auto;
+        }
+
+        .language {
+            a {
+                padding: 7px 24px;
+                border: 1px solid black;
+                border-radius: 8px;
+                text-transform: uppercase;
+                box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+                &:hover {
+                    background-color: rgb(249, 249, 255);
+                }
+            }
+            
+        }
+
+        .login {
+            a {
+                padding: 16px 28px;
+                border: 2px solid rgb(89, 89, 254);
+                border-radius: 8px;
+                color: blue;
+                &:hover {
+                    background-color: rgb(249, 249, 255);
+                    color: rgb(80, 80, 254);
+                }
+            }
+        }
+
+        a {
+            color: rgb(64, 64, 64);
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    // Navigatsiya menyusi styli.
+    .header {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        height: 80px;
+        border-bottom: 1px solid rgb(244, 243, 243);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadov qo'shish */
+        backdrop-filter: blur(15px); /* Orqa tarafdagi elementlarni xiralashtiradi */
+        z-index: 100;
+
+        .nav {
+            width: 95%;
+        }
+        .nav-items {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%; 
+            gap: 3rem;
+            margin: 0;
+        }
+
+        .nav-item {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        .left {
+            justify-content: flex-start;
+            margin-right:auto;
+        }
+
+        .language {
+            a {
+                padding: 7px 24px;
+                border: 1px solid black;
+                border-radius: 8px;
+                text-transform: uppercase;
+                box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+                &:hover {
+                    background-color: rgb(249, 249, 255);
+                }
+            }
+            
+        }
+
+        .login {
+            a {
+                padding: 16px 28px;
+                border: 2px solid rgb(89, 89, 254);
+                border-radius: 8px;
+                color: blue;
+                &:hover {
+                    background-color: rgb(249, 249, 255);
+                    color: rgb(80, 80, 254);
+                }
+            }
+        }
+
+        a {
+            color: rgb(64, 64, 64);
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    // Navigatsiya menyusi styli.
+    .header {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        height: 80px;
+        border-bottom: 1px solid rgb(244, 243, 243);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadov qo'shish */
+        backdrop-filter: blur(15px); /* Orqa tarafdagi elementlarni xiralashtiradi */
+        z-index: 100;
+
+        .nav {
+            width: 95%;
+        }
+        .nav-items {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%; 
+            gap: 3rem;
+            margin: 0;
+        }
+
+        .nav-item {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        .left {
+            justify-content: flex-start;
+            margin-right:auto;
+        }
+
+        .language {
+            a {
+                padding: 7px 24px;
+                border: 1px solid black;
+                border-radius: 8px;
+                text-transform: uppercase;
+                box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+                &:hover {
+                    background-color: rgb(249, 249, 255);
+                }
+            }
+            
+        }
+
+        .login {
+            a {
+                padding: 16px 28px;
+                border: 2px solid rgb(89, 89, 254);
+                border-radius: 8px;
+                color: blue;
+                &:hover {
+                    background-color: rgb(249, 249, 255);
+                    color: rgb(80, 80, 254);
+                }
+            }
+        }
+
+        a {
+            color: rgb(64, 64, 64);
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    // Navigatsiya menyusi styli.
+    .header {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        height: 80px;
+        border-bottom: 1px solid rgb(244, 243, 243);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadov qo'shish */
+        backdrop-filter: blur(15px); /* Orqa tarafdagi elementlarni xiralashtiradi */
+        z-index: 100;
+
+        .nav {
+            width: 95%;
+        }
+
+        .nav-btn {
+            display: none;
+        }
+        .nav-items {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%; 
+            gap: 3rem;
+            margin: 0;
+        }
+
+        .nav-item {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        .left {
+            justify-content: flex-start;
+            margin-right:auto;
+        }
+
+        .language {
+            a {
+                padding: 7px 24px;
+                border: 1px solid black;
+                border-radius: 8px;
+                text-transform: uppercase;
+                box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+                &:hover {
+                    background-color: rgb(249, 249, 255);
+                }
+            }
+            
+        }
+
+        .login {
+            a {
+                padding: 16px 28px;
+                border: 2px solid rgb(89, 89, 254);
+                border-radius: 8px;
+                color: blue;
+                &:hover {
+                    background-color: rgb(249, 249, 255);
+                    color: rgb(80, 80, 254);
+                }
+            }
+        }
+
+        a {
+            color: rgb(64, 64, 64);
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    // Navigatsiya menyusi styli.
+    .header {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        height: 80px;
+        border-bottom: 1px solid rgb(244, 243, 243);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadov qo'shish */
+        backdrop-filter: blur(15px); /* Orqa tarafdagi elementlarni xiralashtiradi */
+        z-index: 100;
+
+        .nav {
+            width: 95%;
+        }
+        .nav-items {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%; 
+            gap: 3rem;
+            margin: 0;
+        }
+
+        .nav-item {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        .left {
+            justify-content: flex-start;
+            margin-right:auto;
+        }
+
+        .language {
+            a {
+                padding: 7px 24px;
+                border: 1px solid black;
+                border-radius: 8px;
+                text-transform: uppercase;
+                box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+                &:hover {
+                    background-color: rgb(249, 249, 255);
+                }
+            }
+            
+        }
+
+        .login {
+            a {
+                padding: 16px 28px;
+                border: 2px solid rgb(89, 89, 254);
+                border-radius: 8px;
+                color: blue;
+                &:hover {
+                    background-color: rgb(249, 249, 255);
+                    color: rgb(80, 80, 254);
+                }
+            }
+        }
+
+        a {
+            color: rgb(64, 64, 64);
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    // Navigatsiya menyusi styli.
+    .header {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        height: 80px;
+        border-bottom: 1px solid rgb(244, 243, 243);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadov qo'shish */
+        backdrop-filter: blur(15px); /* Orqa tarafdagi elementlarni xiralashtiradi */
+        z-index: 100;
+
+        .nav {
+            width: 95%;
+        }
+        .nav-items {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%; 
+            gap: 3rem;
+            margin: 0;
+        }
+
+        .nav-item {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        .left {
+            justify-content: flex-start;
+            margin-right:auto;
+        }
+
+        .language {
+            a {
+                padding: 7px 24px;
+                border: 1px solid black;
+                border-radius: 8px;
+                text-transform: uppercase;
+                box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+                &:hover {
+                    background-color: rgb(249, 249, 255);
+                }
+            }
+            
+        }
+
+        .login {
+            a {
+                padding: 16px 28px;
+                border: 2px solid rgb(89, 89, 254);
+                border-radius: 8px;
+                color: blue;
+                &:hover {
+                    background-color: rgb(249, 249, 255);
+                    color: rgb(80, 80, 254);
+                }
+            }
+        }
+
+        a {
+            color: rgb(64, 64, 64);
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
